@@ -1,0 +1,40 @@
+{
+    "name": "A Telegram AntiChannel in Group Bot by @The_Eternity_Soul.",
+    "description": "A Telegram Bot for kicking mambers who using channel for messeging. Made by @The_Eternity_Soul.",
+    "keywords": [
+        "telegram",
+        "AntiChannel",
+        "channel",
+        "Group",
+        "manager",
+        "bot"
+    ],
+    "repository": "https://github.com/ZainAssist/Anti-Channel-bot",
+    "website": "https://telegram.dog/ChatOnMasti",
+    "success_url": "https://t.me/About_Zain",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "BOT_TOKEN": {
+            "description": "Get this from @BotFather"
+        },
+        "DATABASE_URL": {
+            "description": "MongoDB URI for Saving Chat Settings"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
